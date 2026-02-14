@@ -366,7 +366,6 @@ PRODUCT_PACKAGES += \
     libTEECommon \
     libaal_mtk \
     libaalservice \
-    libaedv \
     libbwc \
     libcapctrl \
     libcares_naptr \
