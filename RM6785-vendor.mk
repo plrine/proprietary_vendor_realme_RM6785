@@ -1191,7 +1191,9 @@ PRODUCT_PACKAGES += \
     mediatek-ims-common \
     mediatek-ims-extension-plugin \
     mediatek-ims-legacy \
+    mediatek-telecom-common \
     mediatek-telephony-base \
+    mediatek-telephony-common \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
