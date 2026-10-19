@@ -242,6 +242,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.trustonic.rc \
+    vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
@@ -280,7 +281,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.5-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkcodecservice@1.1-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.trustonic.tee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.trustonic.tee@1.1-service.rc \
@@ -305,6 +305,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
+    vendor/realme/RM6785/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RM6785/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
@@ -340,6 +341,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libaptXHD_encoder \
     libaptX_encoder \
+    AVCSecureVdecCA \
+    VP9SecureVdecCA \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
@@ -375,6 +378,7 @@ PRODUCT_PACKAGES += \
     libgralloc_metadata \
     libgralloctypes_mtk \
     libhdrvideo \
+    libhevce_sb.ca7.android \
     libhwm \
     libhydra \
     libion_mtk \
@@ -406,6 +410,7 @@ PRODUCT_PACKAGES += \
     libstrongswan \
     libsysenv \
     liburee_meta_drmkeyinstall \
+    libvcodec_oal \
     libverno \
     libvpu \
     libwo \
@@ -426,11 +431,8 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.4 \
     vendor.mediatek.hardware.pq@2.5 \
     vendor.mediatek.hardware.pq@2.6 \
-    AVCSecureVdecCA \
-    VP9SecureVdecCA \
     audio.primary.mt6785 \
     sound_trigger.primary.mt6785 \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-impl \
     libDR \
     libHEVCdec_sa.ca7.android \
     libMtkOmxAdpcmDec \
@@ -468,7 +470,6 @@ PRODUCT_PACKAGES += \
     libh264dec_sd.ca7 \
     libh264dec_se.ca7 \
     libh264enc_sa.ca7 \
-    libhevce_sb.ca7.android \
     libktvdrc \
     libktveffect \
     libktveffect_rec \
@@ -492,7 +493,6 @@ PRODUCT_PACKAGES += \
     libthermalalgo \
     libthha \
     libvc1dec_sa.ca7 \
-    libvcodec_oal \
     libvcodec_utility \
     libvcodecdrv \
     libvolte_core_shr \
@@ -507,7 +507,6 @@ PRODUCT_PACKAGES += \
     libvp9dec_sa.ca7 \
     libvpud_vcodec \
     libvt_custom \
-    vendor.mediatek.hardware.mtkcodecservice@1.1 \
     APUWareUtilsServer \
     APUWareXrpServer \
     gc02k0_mipi_raw_IdxMgr \
@@ -989,6 +988,17 @@ PRODUCT_PACKAGES += \
     libchromanr \
     libcmdl \
     libcmdl_ndk.mtk \
+    libcodec2_hidl@1.0-v31 \
+    libcodec2_hidl@1.1-v31 \
+    libcodec2_hidl@1.2-v31 \
+    libcodec2_hidl_plugin-v31 \
+    libcodec2_mtk_c2store \
+    libcodec2_mtk_vdec \
+    libcodec2_mtk_venc \
+    libcodec2_soft_common-v31 \
+    libcodec2_vndk-v31 \
+    libcodec2_vpp_qt_plugin \
+    libcodec2_vpp_rs_plugin \
     libcvface_api \
     libdip_drv \
     libdip_imem \
@@ -1004,6 +1014,7 @@ PRODUCT_PACKAGES += \
     libfeature_rss \
     libfeatureiodrv_mem \
     libforkexecwrap \
+    libformatter_mtk \
     libgz_uree \
     libhwm-oppo \
     libifcutils_mtk \
@@ -1105,6 +1116,8 @@ PRODUCT_PACKAGES += \
     libratconfig \
     librilfusion \
     libsensor_custom \
+    libsfplugin_ccodec_utils-v31 \
+    libstagefright_bufferqueue_helper-v33 \
     libstereoinfoaccessor_vsdof \
     libstface_fd_api \
     libtflite_mtk \
@@ -1112,6 +1125,7 @@ PRODUCT_PACKAGES += \
     libtlcWidevineModularDrm \
     libudf \
     libutils-v30 \
+    libvcodecdrv_header_stub \
     libwifi-hal-mtk \
     libwifitest \
     libwvhidl \
@@ -1195,6 +1209,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gpu@1.0-service.xml \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_media_c2_V1_2_default.xml \
     oplus_appradio_device_manifest.xml \
     oplus_radio_device_manifest.xml \
     autobt \
@@ -1211,6 +1226,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-mediatek \
     android.hardware.graphics.allocator@4.0-service-mediatek \
     android.hardware.keymaster@4.0-service.trustonic \
+    android.hardware.media.c2@1.2-mediatek-64b \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     camerahalserver \
     mtkfusionrild \
@@ -1218,7 +1234,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.keyinstall@1.0-service \
     vendor.mediatek.hardware.mms@1.5-service \
-    vendor.mediatek.hardware.mtkcodecservice@1.1-service \
     vendor.mediatek.hardware.nvram@1.1-service \
     vendor.mediatek.hardware.pq@2.2-service \
     vendor.trustonic.tee@1.1-service \
@@ -1250,6 +1265,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
 
 PRODUCT_PACKAGES += \
+    vendor_bin_hw_android_hardware_media_c2@1_2-mediatek \
     vendor_lib64_hw_vulkan_mt6785_so \
     vendor_lib64_hw_kmsetkey_default_so \
     vendor_lib64_hw_gatekeeper_mt6785_so \
