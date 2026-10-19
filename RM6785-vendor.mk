@@ -342,21 +342,10 @@ PRODUCT_PACKAGES += \
     libaptX_encoder \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
-    arm.graphics-V1-ndk_platform \
-    libGLES_mali \
-    libGLES_meow \
-    libMEOW_trace \
-    android.hardware.graphics.allocator@4.0-impl-mediatek \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
     gps.default \
     vendor.mediatek.hardware.keyinstall@1.0-impl \
-    vendor.mediatek.hardware.mms@1.5-impl \
-    vendor.mediatek.hardware.pq@2.6-impl \
     libJpgEncPipe \
-    libOpenCL \
     libTEECommon \
-    libaal_mtk \
-    libaalservice \
     libbwc \
     libcapctrl \
     libcares_naptr \
@@ -368,15 +357,7 @@ PRODUCT_PACKAGES += \
     libcurl-md \
     libcurl-ss \
     libcustom_nvram \
-    libdpframework \
     libfile_op \
-    libged \
-    libgpu_aux \
-    libgpud \
-    libgralloc_extra \
-    libgralloc_metadata \
-    libgralloctypes_mtk \
-    libhdrvideo \
     libhevce_sb.ca7.android \
     libhwm \
     libhydra \
@@ -398,10 +379,6 @@ PRODUCT_PACKAGES += \
     libnvram_daemon_callback \
     libnvram_platform \
     libnvram_sec \
-    libpixelflinger \
-    libpq_cust_base \
-    libpq_prot \
-    librgbwlightsensor \
     libscltm \
     libsimaka \
     libssl-md \
@@ -414,29 +391,12 @@ PRODUCT_PACKAGES += \
     libvpu \
     libwo \
     vendor.mediatek.hardware.audio@6.1 \
-    vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keyinstall@1.0 \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mms@1.1 \
-    vendor.mediatek.hardware.mms@1.2 \
-    vendor.mediatek.hardware.mms@1.3 \
-    vendor.mediatek.hardware.mms@1.4 \
-    vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.netdagent@1.0 \
-    vendor.mediatek.hardware.pq@2.0 \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.pq@2.2 \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.pq@2.4 \
-    vendor.mediatek.hardware.pq@2.5 \
-    vendor.mediatek.hardware.pq@2.6 \
     audio.primary.mt6785 \
     sound_trigger.primary.mt6785 \
     libDR \
     libHEVCdec_sa.ca7.android \
-    libMtkOmxVdecEx \
-    libMtkOmxVenc \
-    libMtkOmxWmaDec \
     libMtkSpeechEnh \
     lib_iir \
     lib_speech_enh \
@@ -501,6 +461,10 @@ PRODUCT_PACKAGES += \
     libvt_custom \
     APUWareUtilsServer \
     APUWareXrpServer \
+    arm.graphics-V1-ndk_platform \
+    libGLES_mali \
+    libGLES_meow \
+    libMEOW_trace \
     gc02k0_mipi_raw_IdxMgr \
     gc02k0_mipi_raw_tuning \
     gc02m0_mipi_mono_IdxMgr \
@@ -509,6 +473,8 @@ PRODUCT_PACKAGES += \
     gc2375h_mipi_raw_19661_tuning \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
+    android.hardware.graphics.allocator@4.0-impl-mediatek \
+    android.hardware.graphics.mapper@4.0-impl-mediatek \
     dfps.mt6785 \
     hwcomposer.mt6785 \
     kmsetkey.trustonic \
@@ -521,7 +487,9 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
+    vendor.mediatek.hardware.mms@1.5-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
+    vendor.mediatek.hardware.pq@2.6-impl \
     imx471_mipi_raw1_IdxMgr \
     imx471_mipi_raw1_tuning \
     imx682_mipi_raw_IdxMgr \
@@ -893,6 +861,7 @@ PRODUCT_PACKAGES += \
     libFaceBeautyCap \
     libFaceBeautyPre \
     libMcClient \
+    libOpenCL \
     libPerfectlyClearCrux \
     libPolarrRender \
     libSonyIMX230PdafLibrary \
@@ -910,6 +879,8 @@ PRODUCT_PACKAGES += \
     lib_bsscore \
     libaal_cust \
     libaal_key \
+    libaal_mtk \
+    libaalservice \
     libakm \
     libapusys \
     libarcsoft_distortion_correction \
@@ -995,6 +966,7 @@ PRODUCT_PACKAGES += \
     libdip_drv \
     libdip_imem \
     libdip_postproc \
+    libdpframework \
     libeffecthal.base \
     libfeature.face \
     libfeature.stereo.provider \
@@ -1007,7 +979,14 @@ PRODUCT_PACKAGES += \
     libfeatureiodrv_mem \
     libforkexecwrap \
     libformatter_mtk \
+    libged \
+    libgpu_aux \
+    libgpud \
+    libgralloc_extra \
+    libgralloc_metadata \
+    libgralloctypes_mtk \
     libgz_uree \
+    libhdrvideo \
     libhwm-oppo \
     libifcutils_mtk \
     libimageio \
@@ -1105,7 +1084,11 @@ PRODUCT_PACKAGES += \
     liboppo_arcSoftBokehEngine_new \
     liboppo_blank_algo \
     liboppo_platform_hwi \
+    libpixelflinger \
+    libpq_cust_base \
+    libpq_prot \
     libratconfig \
+    librgbwlightsensor \
     librilfusion \
     libsensor_custom \
     libsfplugin_ccodec_utils-v31 \
@@ -1153,15 +1136,29 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.dfps@1.0 \
+    vendor.mediatek.hardware.gpu@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.0 \
     vendor.mediatek.hardware.keymaster_attestation@1.1 \
     vendor.mediatek.hardware.lbs@1.0 \
+    vendor.mediatek.hardware.mms@1.0 \
+    vendor.mediatek.hardware.mms@1.1 \
+    vendor.mediatek.hardware.mms@1.2 \
+    vendor.mediatek.hardware.mms@1.3 \
+    vendor.mediatek.hardware.mms@1.4 \
+    vendor.mediatek.hardware.mms@1.5 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.nvram@1.0 \
     vendor.mediatek.hardware.nvram@1.1 \
     vendor.mediatek.hardware.power@1.1 \
     vendor.mediatek.hardware.power@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
+    vendor.mediatek.hardware.pq@2.0 \
+    vendor.mediatek.hardware.pq@2.1 \
+    vendor.mediatek.hardware.pq@2.2 \
+    vendor.mediatek.hardware.pq@2.3 \
+    vendor.mediatek.hardware.pq@2.4 \
+    vendor.mediatek.hardware.pq@2.5 \
+    vendor.mediatek.hardware.pq@2.6 \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
