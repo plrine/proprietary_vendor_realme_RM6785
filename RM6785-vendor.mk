@@ -304,7 +304,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/ipsec/strongswan.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/strongswan.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
     vendor/realme/RM6785/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
-    vendor/realme/RM6785/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/realme/RM6785/proprietary/vendor/etc/mtk_platform_codecs_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_platform_codecs_config.xml \
     vendor/realme/RM6785/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
     vendor/realme/RM6785/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
@@ -435,12 +434,6 @@ PRODUCT_PACKAGES += \
     sound_trigger.primary.mt6785 \
     libDR \
     libHEVCdec_sa.ca7.android \
-    libMtkOmxAdpcmDec \
-    libMtkOmxAlacDec \
-    libMtkOmxApeDec \
-    libMtkOmxCore \
-    libMtkOmxGsmDec \
-    libMtkOmxMp3Dec \
     libMtkOmxVdecEx \
     libMtkOmxVenc \
     libMtkOmxWmaDec \
@@ -488,7 +481,6 @@ PRODUCT_PACKAGES += \
     libsi_sixth \
     libspeech_enh_lib \
     libspeechparser_vendor \
-    libstagefrighthw \
     libstorage_otp \
     libthermalalgo \
     libthha \
