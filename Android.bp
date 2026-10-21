@@ -24895,14 +24895,6 @@ dex_import {
 }
 
 dex_import {
-    name: "mediatek-telecom-common",
-    owner: "realme",
-    jars: [
-        "proprietary/system/framework/mediatek-telecom-common.jar",
-    ],
-}
-
-dex_import {
     name: "mediatek-telephony-base",
     owner: "realme",
     jars: [

@@ -1192,7 +1192,6 @@ PRODUCT_PACKAGES += \
     MtkTelephonyAssist \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-ims-extension-plugin \
     android.hardware.gpu@1.0-service.xml \
@@ -1263,5 +1262,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     mediatek-ims-base \
     mediatek-ims-common \
-    mediatek-telecom-common \
     mediatek-telephony-base
